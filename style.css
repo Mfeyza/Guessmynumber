@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P:regular);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  height: 300px;
+  /* border-bottom: 7px solid #eee; */
+}
+.title {
+  margin-top: 200px;
+  font-family: "Press Start 2P";
+  text-shadow: 0 0 20px #6b1717, 0 0 30px #bda3b0, 0 0 40px #ae93a0,
+    0 0 50px #a88d9b, 0 0 60px rgb(47, 152, 31), 0 0 70px #15c12c,
+    0 0 80px #358222;
+  font-size: 50px;
+}
+.btn1 {
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+}
+.start {
+  font-family: "Press Start 2P";
+}
+.nameinput {
+  height: 300px;
+}
+.nametext {
+  font-family: "Press Start 2P";
+  color: #15c12c;
+}
+.nameplayer {
+  margin-top: 100px;
+  width: 300px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #141212;
+  box-shadow: 0 0 20px #6b1717, 0 0 30px #bda3b0, 0 0 40px #ae93a0,
+    0 0 50px #68525e, 0 0 60px rgb(47, 152, 31), 0 0 70px #15c12c,
+    0 0 80px #7f857d;
+}
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  top: 50%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+.secret {
+  font-size: 25px;
+  color: #14ed31;
+}
+
+.secondpage {
+  font-family: "Press Start 2P";
+  color: white;
+  min-height: 100vh;
+
+  /* background-size: cover; */
+}
+
+.between {
+  /* position: absolute; */
+  text-align: right;
+  margin-top: 20px;
+  /* top: 20px;
+  right: 15px; */
+}
+
+.firstpage {
+  /* background-image: url(testere-sahne.webp);
+  background-repeat: "no-repeat";
+background-size : "cover"; */
+  /* border: 2px solid red; */
+  background-color: #141212;
+  height: 100vh;
+}
+.btn {
+  margin-top: 15px;
+  margin-left: 15px;
+  border: none;
+  font-family: inherit;
+  /* parent tan inherit etsin alsın */
+  font-size: 30px;
+  padding: 20px 25px;
+  cursor: pointer;
+  background-color: #6e1717;
+  text-align: center;
+  
+}
+.nameplayer{
+  color: #ffffff;
+  font-size: 25px;
+  font-family:"Press Start 2P" ;
+}
+
+.number {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 140px;
+  padding: 20px;
+  background: #141212;
+
+  font-size: 60px;
+  text-align: center;
+  transform: translate(-50%, 50%);
+  opacity: 0.3;
+  /* çizginin üzerinde görünsün diye */
+}
+span {
+  color: rgb(78, 241, 19);
+  text-shadow: 0 0 20px #fff, 0 0 30px #bda3b0, 0 0 40px #ae93a0,
+    0 0 50px #a88d9b, 0 0 60px rgb(47, 152, 31), 0 0 70px #15c12c,
+    0 0 80px #358222;
+  opacity: 0.9;
+}
+main {
+  height: 600px;
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right {
+  width: 400px;
+  font-size: 20px;
+}
+
+.left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guess {
+  background: none;
+  border-bottom: 5px outset #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  /* parent ın font-family sini kalıtımsal olarak al, aynısını kullan */
+  font-family: inherit;
+  color: inherit;
+  font-size: 40px;
+  text-align: center;
+  width: 200px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+.msg {
+  margin-bottom: 150px;
+}
+.score {
+  margin-bottom: 40px;
+}
+
+/* Loader */
+.progress {
+  height: 10px;
+  width: 90%;
+  margin: auto;
+  border: 10px solid #61f461;
+  border-radius: 15px;
+}
+.progress .color {
+  position: absolute;
+  background-color: #ba0f0f;
+  width: 0px;
+  height: 5px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+  background-color: rgb(93, 20, 20) !important;
+  border-radius: 50px !important;
+}
+
+div:where(.swal2-container).swal2-center > .swal2-popup {
+  align-self: start !important;
+}

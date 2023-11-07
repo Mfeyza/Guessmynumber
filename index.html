@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+
+<body>
+  <main class="firstpage">
+    <div class="nameinput d-flex justify-content-center align-items-center">
+     <h1 class="title">I WANT TO PLAY GAME</h1>
+     <section>
+      <h2 class="nametext">Player Name</h2>
+      🚀<input class="nameplayer" type="text">🚀 <br><br min>
+      <button id="start" class="start btn1  justify-content-center align-items-center"><span>🏁</span> START</button>
+      </section>
+    </div>
+  </main >
+
+ <section class="secondpage">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-50 d-flex justify-content-center">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Guess My Number</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="easy" class="nav-link active" aria-current="page" href="#" style="color: rgb(226, 226, 78);">KOLAY</a>
+              </li>
+              <li class="nav-item">
+                <a id="medium" class="nav-link" href="#" style="color: #8ce675;">ORTA</a>
+              </li>
+              <li class="nav-item">
+                <a id="hard" class="nav-link" href="#" style="color: #c12915;">ZOR</a>
+              </li>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+      <h1 class="nameplayer2 mt-5"></h1>
+        <h1 class="secret">Senin için 1 ile 20 arasında bir sayı sakladım</h1>
+       
+        <p class="between"></p>
+        <button class="btn again" style="color: #442282; border-left: #3c0808; border-right: #520f0f;border: 2px solid darkgreen;">Again</button>
+        <div class="number"><span>?</span></div>
+    </header>
+    <main>
+        <section class="left">
+            <input type="text" class="guess" oninput="limitToTwoDigits(this)">
+            <button id="btn-check" class="btn check" style="font-size: 30px; color:rgb(102, 19, 19); text-shadow: 0 0 20px #520f0f, 0 0 30px #572727, 0 0 40px #3c0808, 0 0 50px #2b0808, 0 0 60px rgb(80, 23, 16), 0 0 70px #c12915, 0 0 80px #358222;;">Check</button>
+        </section>
+        <section class="right">
+            <p class="msg">I want to play game</p>
+            <p class="score-label">💯Score: <span class="score">10</span> </p>
+            <p class="top-score-label">🏅Top Score: <span class="top-score">8</span> </p>
+        </section>
+      </main>
+        </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+</body>
+<script src="app.js"></script>
+</html>
