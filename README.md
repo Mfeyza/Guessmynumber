@@ -32,7 +32,7 @@ No special setup is required. Simply clone this repository and open the index.ht
 
 <div align="center">
 
-  <img src="./assets/Screenshot_2.jpg"  width="55%" height="600" />
+  <img src="./Ekran görüntüsü 2024-01-11 025222.png"  width="55%" height="600" />
   <img src="./assets/Screenshot_3.jpg"  width="90.5%" height="750" />
 </div>
 
