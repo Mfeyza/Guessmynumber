@@ -28,7 +28,7 @@ Winning/Losing: The game ends when you guess the number correctly or run out of 
 Setup and Installation
 No special setup is required. Simply clone this repository and open the index.html file in your web browser to start playing the game.
 
-
+visitmy page : https://guessmynumber-weld.vercel.app/ 🤘🏻
 
 <div align="center">
 
